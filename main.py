@@ -21,7 +21,7 @@ def run_flask():
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
 
-BOT_TOKEN = "8294419814:AAHYv19hIUY_XX_Cl72hF-ItGyEjQzQj6G8"
+BOT_TOKEN = "6642301757:AAFUJpqo7uUkaRoNPa-NVqWJ6V_WdNP1mDM"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 user_data = {}
@@ -138,4 +138,5 @@ if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     print("🤖 Bot is running... Waiting for messages.")
     bot.infinity_polling()
+
 
